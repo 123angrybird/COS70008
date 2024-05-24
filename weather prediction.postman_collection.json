@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "a6adac6e-9fc9-4db0-aceb-b3ba72d2c899",
+		"name": "weather prediction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27099962"
+	},
+	"item": [
+		{
+			"name": "predict",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2023,\r\n    \"month\": 9,\r\n    \"day\": 7,\r\n    \"cloud\": 89,\r\n    \"humidity\": 89,\r\n    \"pressure\": 1006.3,\r\n    \"rainfall\": 0.7,\r\n    \"temperature\": 27.7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/flood_prediction",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"flood_prediction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "flood prediction in seven days",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/flood_prediction_in_seven_days/aberdeen",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"flood_prediction_in_seven_days",
+						"aberdeen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "flood prediction current date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/flood_prediction_current_date/big wave bay",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"flood_prediction_current_date",
+						"big wave bay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "general weather forcast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/general_weather_forcast/mount davis",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"general_weather_forcast",
+						"mount davis"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
